@@ -65,9 +65,9 @@ def encode_file_to_base64(file_path):
         encoded_string = base64.b64encode(file.read()).decode('utf-8')
     return encoded_string
 recent_sensors_value = {
-    'temperature': 0,
+    'Temperature': 0,
     'humidity': 0,
-    'Illuminance': 0,
+    'lightLevel': 0,
     'gas': 0
 }
 
