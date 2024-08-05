@@ -7,10 +7,10 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include "dht11.h"
+#include "wifi_credentials.h" // WiFi credentials 파일 포함
 #define DHT11PIN D2 // D2 포트에 DHT11 센서를 연결해야 함
 
-const char* ssid = "Ccom";      // WiFi SSID
-const char* password = "ccom0414";  // WiFi 비밀번호
+
 dht11 DHT11; // 온습도 센서
 int light_sensor = A1; // 조도센서
 int gasSensorPin = A4; // MQ-2 센서의 아날로그 출력 핀
